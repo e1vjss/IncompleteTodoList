@@ -1,0 +1,124 @@
+.title{
+    color: aqua;
+    background-color: black;
+    padding: 50px;
+    font-size: 30px;
+    grid-column: 1 / span 2;
+    
+}
+ .display{
+    background-color: #B0E2FF;
+    height: 100vh;;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+ }
+ .leftSide{
+    background: black;
+    
+  }
+  .leftSideButton{
+    padding: 10px 20px;
+  background-color: aqua;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+  .leftSide input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  
+  .rightSide{
+    background: black;
+  }
+  .projectButtons {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add hover effect if desired */
+  .projectButtons:hover {
+    background-color: #2980b9;
+  }
+  /* Add styling to the form container */
+.rightSide {
+  padding: 20px;
+  background-color: black;
+  border-left: 1px solid #ccc;
+}
+
+/* Style the form itself */
+#todoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Style the form inputs and button */
+#todoForm input[type="text"],
+#todoForm button {
+  margin: 5px;
+  padding: 10px;
+  width: 30%;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+#todoForm button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#todoForm button:hover {
+  background-color: #0056b3;
+}
+
+
+input[type="date"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  /* Use a custom background image for the dropdown arrow */
+  background-image: url('./arrow.png');
+  background-repeat: no-repeat;
+  background-position: left 10px bottom;
+  background-size: 16px 16px; /* Set the size of your custom arrow image */
+}
+
+
+/* Style the date picker dropdown arrow */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color:pink; /* Change color of the dropdown arrow */
+  cursor: pointer;
+}
+
+#todoItemsContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.todoItem{
+  color: white
+}

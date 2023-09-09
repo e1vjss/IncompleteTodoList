@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-list</title>
+  </head>
+  <body>
+    <div class="display">
+      <div class="title">TODO LIST</div>
+      <div class="leftSide">
+        <div class="addProjects">
+          <input id="inputProject" type="text" />
+          <button id="inputProjectButton" class="leftSideButton">
+            Add new Projects
+          </button>
+        </div>
+        <div class="projects">
+          <button class="projectButtons" id="defaultButton">DEFAULT</button>
+          <button class="projectButtons" id="todayButton">Today</button>
+          <button class="projectButtons" id="WeekButton">In a week</button>
+          <button class="projectButtons" id="MonthButton">In a month</button>
+        </div>
+      </div>
+      <div class="rightSide">
+        <form id="todoForm">
+          <input type="text" id="description" placeholder="Description" />
+          <input type="date" id="dueDate" placeholder="Due Date" />
+          <select name="options" id="priority">
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+          <button id="submitButton" type="button">Add Todo</button>
+        </form>
+        <div id="todoItemsContainer">hiiiii</div>
+      </div>
+    </div>
+  <script defer src="main.js"></script></body>
+</html>
